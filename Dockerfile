@@ -1,7 +1,7 @@
 FROM nvidia/cuda:11.4.3-cudnn8-devel-ubuntu20.04
 
 # Add maintainer environment variable
-ENV MAINTAINER shize
+ENV MAINTAINER zafirshi
 
 # Define timezone
 ENV TZ=Asia/Shanghai
