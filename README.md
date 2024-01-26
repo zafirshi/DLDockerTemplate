@@ -55,6 +55,6 @@ docker attach <Container-name>
 You can use the Docker plugin in VSCode to connect to a running container, just as you would connect to a remote server (connecting to a container on a server is also permitted).
 
 ## Contribution
-If you would like to improve the project, you are welcome to submit a PR!:tada:
+If you would like to improve the project, you are welcome to submit a PR! :tada:
 
 PS: You need to first fork this project, then create a new branch in your own forked version to make changes. Finally, on the web page, click on Pull Requests -> New Pull Request, select the correct branch, and create the PR.
