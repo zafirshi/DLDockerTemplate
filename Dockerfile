@@ -3,6 +3,10 @@ FROM nvidia/cuda:11.4.3-cudnn8-devel-ubuntu20.04
 # Add maintainer environment variable
 ENV MAINTAINER zafirshi
 
+#  Prevent process leakage
+ADD https://github.com/krallin/tini/releases/download/v0.18.0/tini /bin/tini
+RUN chmod +x /bin/tini
+
 # Define timezone
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
