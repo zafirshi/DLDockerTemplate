@@ -15,6 +15,39 @@ Clone this project to your local machine and modify the `MAINTAINER` name in the
 ```bash
 ENV MAINTAINER <your-name>
 ```
+Select an appropriate base image from the [official NVIDIA images](https://hub.docker.com/r/nvidia/cuda), taking `11.8.0-cudnn8-devel-ubuntu22.04` as an example:
+
+<table class="tg" style="undefined;table-layout: fixed; width: 466px">
+<colgroup>
+<col style="width: 106.333333px">
+<col style="width: 359.666666px">
+</colgroup>
+<thead>
+  <tr>
+    <th class="tg-0pky"><span style="font-weight:bold">Tag</span></th>
+    <th class="tg-0pky"><span style="font-weight:bold">Explain</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">11.8.0</td>
+    <td class="tg-0pky">CUDA Toolkit Version</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">cudnn8</td>
+    <td class="tg-0pky">CUDNN Version</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">devel</td>
+    <td class="tg-0pky">Compilation toolchain: nvcc, CUDA include, lib64, et al.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">ubuntu22.04</td>
+    <td class="tg-0lax">Base Image</td>
+  </tr>
+</tbody>
+</table>
+
 ### Build Container
 In the directory containing the Dockerfile, execute the following command to build the base image:
 
